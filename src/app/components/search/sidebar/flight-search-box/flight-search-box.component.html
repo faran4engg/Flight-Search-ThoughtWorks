@@ -22,14 +22,14 @@
         </div>
 
         <div class="f-ctrl side-by-side">
-          <input type="date" name="startDate" id="oJrDate" [(ngModel)]="model.startDate" #startDate="ngModel" required appPreviousDate
+          <input type="date" name="startDate" id="oJrDate" [(ngModel)]="model.startDate" #startDate="ngModel" required 
           />
           <div class="help-block" *ngIf="startDate.errors?.required && startDate.touched">
             Start Date is mandatory
           </div>
         </div>
         <div class="f-ctrl side-by-side" *ngIf="searBoxTab">
-          <input type="date" name="returnDate" [(ngModel)]="model.returnDate" #returnDate="ngModel" id="rJrDate" required appPreviousDate>
+          <input type="date" name="returnDate" [(ngModel)]="model.returnDate" #returnDate="ngModel" id="rJrDate" required >
 
           <div class="help-block" *ngIf="returnDate.errors?.required && returnDate.touched">
             Return Date is required
